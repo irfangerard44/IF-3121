@@ -1,0 +1,44 @@
+.kotakatas{
+
+	background-color: #eeeff2;
+	width: 100px;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin:10px;
+	border-left-style: dashed;
+	border-width: 10px;
+	border-color: #D0D0FF;
+	padding: 10px;
+
+
+}
+
+.kotakfull{
+	background-color: #eeeff2;
+	width: 100px;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	margin:10px;
+	border-left-style: dashed;
+	border-width: 10px;
+	border-color: #D0D0FF;
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	}
+
+body{
+	font-size: 40px;
+	font-family: Tahoma;
+}
+
+div:hover{
+	background-color: yellow;
+	color: goldenrod;
+	cursor: pointer;
+}
