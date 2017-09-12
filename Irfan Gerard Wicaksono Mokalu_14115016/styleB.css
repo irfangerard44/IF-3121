@@ -1,0 +1,33 @@
+.kotakA{
+	background-color: #eeeff2;
+	margin-left: 4px;
+	width: 100px;
+	height: 150px;
+	float: left;
+	font-size: 40px;
+	margin-right: 10px;
+	text-indent: 10px;
+	border-left: 10px dotted #d0d0ff;
+	font-family: Tahoma;
+	
+}
+.kotakA:hover{
+	background-color: yellow;
+	cursor: pointer;
+}
+.kotakB{
+	background-color: #eeeff2;
+	margin-left: 4px;
+	width: 100px;
+	height: 150px;
+	font-size: 40px;
+	float:right;
+	margin-top: 500px;
+	text-indent: 10px;
+	border-left: 10px dotted #d0d0ff;
+}
+
+.kotakB:hover{
+	background-color: yellow;
+	cursor: pointer;
+}
