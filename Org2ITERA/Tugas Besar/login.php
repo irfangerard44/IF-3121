@@ -12,18 +12,18 @@
   
  
   <meta name="msapplication-TileColor" content="#5fb79b">
-  <link href="file:///C|/xampp/htdocs/tiket/admin/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="file:///C|/xampp/htdocs/tiket/admin/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="file:///C|/xampp/htdocs/tiket/admin/css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="file:///C|/xampp/htdocs/tiket/admin/css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
-  <link href="file:///C|/xampp/htdocs/tiket/admin/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="admin/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="admin/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="admin/css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="admin/css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="admin/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
   
 </head>
 
-<body class="cyan">
+<body class="light-blue">
     <div id="login-page" class="row">
     <div class="col s12 z-depth-4 card-panel">
-      <form class="login-form" action="file:///C|/xampp/htdocs/tiket/proseslogin.php" method="POST" name="formku" id="formku">
+      <form class="login-form" action="proseslogin.php" method="POST" name="formku" id="formku">
         <div class="row">
           <div class="input-field col s12 center">
             <p class="center login-form-text">Login Helpdesk</p>
@@ -56,10 +56,10 @@
         </div>
         <div class="row">
           <div class="input-field col s6 m6 l6">
-            <p class="margin medium-small"><a href="file:///C|/xampp/htdocs/tiket/page-register.html">Register Now!</a></p>
+            <p class="margin medium-small"><a href="page-register.html">Register Now!</a></p>
           </div>
           <div class="input-field col s6 m6 l6">
-              <p class="margin right-align medium-small"><a href="file:///C|/xampp/htdocs/tiket/page-forgot-password.html">Forgot password ?</a></p>
+              <p class="margin right-align medium-small"><a href="page-forgot-password.html">Forgot password ?</a></p>
           </div>          
         </div>
       </form>
@@ -72,16 +72,16 @@
     ================================================ -->
 
   <!-- jQuery Library -->
-  <script type="text/javascript" src="file:///C|/xampp/htdocs/tiket/admin/js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="admin/js/jquery-1.11.2.min.js"></script>
   <!--materialize js-->
-  <script type="text/javascript" src="file:///C|/xampp/htdocs/tiket/admin/js/materialize.js"></script>
+  <script type="text/javascript" src="admin/js/materialize.js"></script>
   <!--prism-->
-  <script type="text/javascript" src="file:///C|/xampp/htdocs/tiket/admin/js/prism.js"></script>
+  <script type="text/javascript" src="admin/js/prism.js"></script>
   <!--scrollbar-->
-  <script type="text/javascript" src="file:///C|/xampp/htdocs/tiket/admin/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script type="text/javascript" src="admin/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
   <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-  <script type="text/javascript" src="file:///C|/xampp/htdocs/tiket/admin/js/plugins.js"></script>
+  <script type="text/javascript" src="admin/js/plugins.js"></script>
 
 </body>
 
