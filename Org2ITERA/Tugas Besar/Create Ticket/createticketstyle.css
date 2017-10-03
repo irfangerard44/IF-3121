@@ -1,0 +1,33 @@
+.topicissues {
+	margin-right: 350px;
+	margin-left: 350px;
+}
+
+.topicissues label{
+	float: left;
+	width: 150px;
+}
+
+.contactinformation {
+	margin-right: 350px;
+	margin-left: 350px;
+}
+
+.contactinformation label{
+	float: left;
+	width: 150px;
+}
+
+
+.ticketdetails {
+	margin-right: 350px;
+	margin-left: 350px;
+}
+
+.ticketdetails label{
+	float: left;
+	width: 150px;
+}
+.submit {
+	margin-left: 350px;
+}
