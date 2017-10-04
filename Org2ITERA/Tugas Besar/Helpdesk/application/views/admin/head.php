@@ -8,18 +8,18 @@
     <title>Helpdesk </title>
 
        <!-- CORE CSS    -->
-    <link href=" <?=base_url();?>aset/admin/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href=" <?=base_url();?>aset/admin/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?=base_url();?>aset/admin/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?=base_url();?>aset/admin/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <script src="../dist/sweetalert-dev.js"></script>
-    <!--<link rel="stylesheet" href="../dist/sweetalert.css">-->
+    <!--<script src="../dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="../dist/sweetalert.css">-->
 
 
     <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
-    <link href=" <?=base_url();?>aset/admin/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href=" <?=base_url();?>aset/admin/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href=" <?=base_url();?>aset/admin/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href=" <?=base_url();?>aset/admin/js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?=base_url();?>aset/admin/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?=base_url();?>aset/admin/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?=base_url();?>aset/admin/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="<?=base_url();?>aset/admin/js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
   
   <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
  

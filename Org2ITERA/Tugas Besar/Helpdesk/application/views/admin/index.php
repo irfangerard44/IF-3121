@@ -1,5 +1,6 @@
- 
-
+<?php 
+	include "conn.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,23 +8,21 @@
 
 <body>
    
-    <?php// include "header.php"; ?>
+    <?php include "header.php"; ?>
   
     <div id="main">
+                <!-- START LEFT SIDEBAR NAV-->
+            <?php include "menu.php"; ?>
         
-       
-
-            <!-- START LEFT SIDEBAR NAV-->
-            <?php// include "menu.php"; ?>
-
             
             <section id="content">
-
-                <!--start container-->
                 <div class="container" >
                     <!--card stats start-->
                     <div id="card-stats">
                         <div class="row">
+                        <?php $tampil=mysqli_query($koneksi, "select * from tiket where status='open'");
+                        $total=mysqli_num_rows($tampil);
+                        ?>
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content  green white-text">
@@ -33,6 +32,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <?php $tampil1=mysqli_query($koneksi, "select * from tiket where status='close'");
+                        $total1=mysqli_num_rows($tampil1);
+                        ?>
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content purple white-text">
@@ -42,7 +44,9 @@
                                     </div>
                                 </div>
                             </div>              
-                                       
+                            <?php $tampil2=mysqli_query($koneksi, "select * from tiket order by id_tiket");
+                        $total2=mysqli_num_rows($tampil2);
+                        ?>              
                             <div class="col s12 m6 l3">
                                 <div class="card">
                                     <div class="card-content blue-grey white-text">
@@ -66,7 +70,11 @@
                                         <p>Status <b style="color: red;">Open</b></p>
                                         <!-- <a href="#" class="secondary-content"><i class="mdi-action-grade"></i></a>-->
                                     </li>
-                                   
+                                    <?php
+                    $tanggal = date("Y/m/d");
+                    $query= "SELECT * FROM tiket WHERE status='open' limit 7";
+                    $tampil=mysqli_query($koneksi, $query) or die(mysqli_error());
+                    ?>
                     <?php 
                     $no=0;
                     while($data=mysqli_fetch_array($tampil))
@@ -100,6 +108,11 @@
                                         <p>Status <b style="color: blue;">Close</b></p>
                                         <!-- <a href="#" class="secondary    -content"><i class="mdi-action-grade"></i></a> -->
                                     </li>
+                    <?php
+                    $tanggal = date("Y/m/d");
+                    $query1= "SELECT * FROM tiket WHERE status='close' limit 7";
+                    $tampil1=mysqli_query($koneksi, $query1) or die(mysqli_error());
+                    ?>
                     <?php 
                     $no=0;
                     while($data1=mysqli_fetch_array($tampil1))
@@ -137,7 +150,7 @@
 
 
    
-    <?php include "footer.php"; ?>
+    <?php //include "footer.php"; ?>
  
 
    
