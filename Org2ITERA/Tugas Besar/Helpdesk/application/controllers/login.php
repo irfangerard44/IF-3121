@@ -38,7 +38,7 @@ class login extends CI_Controller {
 
 $q = $this->model->login($username,$password);
 if ($q) {
-	$tiketopen=$this->model->gettiketopen();
+	/*$tiketopen=$this->model->gettiketopen();
 	//$tiketopen=mysqli_num_rows($tiketopen);
 	
 	$tiketclose=$this->model->gettiketclose();
@@ -52,9 +52,9 @@ if ($q) {
 	
 	$getlisttiketclose=$this->model->getlisttiketclose();
 	//$getlisttiketclose=mysqli_num_rows($getlisttiketclose);
-	$data=array('total'=>$tiketopen,'total1'=>$tiketclose,'total2'=>$gettikettotal,'tampil'=>$getlisttiketopen,'tampil2'=>$getlisttiketclose);
+	$data=array('total'=>$tiketopen,'total1'=>$tiketclose,'total2'=>$gettikettotal,'tampil'=>$getlisttiketopen,'tampil2'=>$getlisttiketclose);*/
 	
-	$this->load->view('admin/index.php',$data);
+	$this->load->view('admin/index.php');
 	
 }
 	}
