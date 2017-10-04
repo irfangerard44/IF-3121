@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04 Okt 2017 pada 17.16
+-- Generation Time: 04 Okt 2017 pada 18.05
 -- Versi Server: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -33,9 +33,19 @@ CREATE TABLE `tiket` (
   `nim` int(20) DEFAULT NULL,
   `nama` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
+  `tanggal` datetime NOT NULL,
   `prodi` varchar(32) DEFAULT NULL,
-  `problem` varchar(600) DEFAULT NULL
+  `problem` varchar(600) DEFAULT NULL,
+  `penanganan` varchar(300) DEFAULT NULL,
+  `status` varchar(12) NOT NULL DEFAULT 'Belum'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tiket`
+--
+
+INSERT INTO `tiket` (`id_tiket`, `nim`, `nama`, `email`, `tanggal`, `prodi`, `problem`, `penanganan`, `status`) VALUES
+(2147483647, 0, '1', '1@d.d', '2017-10-04 00:00:00', '', '1', '', 'open');
 
 -- --------------------------------------------------------
 
