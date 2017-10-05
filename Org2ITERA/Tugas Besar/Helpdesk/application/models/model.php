@@ -60,5 +60,16 @@ class model extends CI_Model {
 		return $hasil;
 		}
 	}
+	public function searchticket($id_tiket){
+	$ambil=$this->db->select("*")->from("tiket")->where("id_tiket='$id_tiket'")->get();
+	if($ambil->num_rows() > 0){
+			foreach($ambil->result() as $baris){
+			$hasil[] = $baris;
+			}
+		return $hasil;
+		}
+	}
+	
+	
 }
 ?>

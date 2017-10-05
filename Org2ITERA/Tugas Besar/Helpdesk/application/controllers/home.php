@@ -26,5 +26,13 @@ class home extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function search()
+	{
+		$id_tiket = $_POST['id_tiket'];
+		
+		$data['isi'] = $this->model->searchticket($id_tiket);
+		$this->load->view('search',$data);
+	}
+
 }
 ?>

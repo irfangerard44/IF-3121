@@ -45,13 +45,13 @@
 		</nav>
 
  <?php
- include "conn.php";
+include "conn.php"
  
 			if(isset($_POST['input'])){
 			 
 				$id_tiket  = $_POST['id_tiket'];
-				$tanggal   = $_POST['tanggal'];
-				$pc_no     = $_POST['pc_no'];
+				$tanggal   = date("Y/m/d"); 
+				$nim       = $_POST['nim'];
                 $nama      = $_POST['nama'];
                 $email     = $_POST['email'];
                 $prodi     = $_POST['prodi'];
@@ -63,13 +63,13 @@
     
                 
     
-		//echo "Email berhasil terkirim!";  
 	
 				
 				$cek = mysqli_query($koneksi, "SELECT * FROM tiket WHERE id_tiket='$id_tiket'");
 				if(mysqli_num_rows($cek) == 0){
-						$insert = mysqli_query($koneksi, "INSERT INTO tiket(id_tiket, tanggal, nim, nama, email, prodi, problem, penanganan, status)
-															VALUES('$id_tiket','$tanggal','$nim','$nama','$email','$prodi','$problem','$none','$open')") or die(mysqli_error());
+						
+						$insert = mysqli_query($koneksi, "INSERT INTO tiket(id_tiket,nim,nama,email,tanggal,prodi,problem,penanganan,status)
+															VALUES('$id_tiket','$nim','$nama','$email',$tanggal,'$prodi','$problem','$none','$open')");
 						if($insert){
 							echo '<script>sweetAlert({
 	                                                   title: "Berhasil!", 
@@ -79,9 +79,10 @@
 						}else{
 							echo '<script>sweetAlert({
 	                                                   title: "Gagal!", 
-                                                        text: "Tiket Gagal di kirim, silahakan coba lagi!", 
+                                                        text: "Tiket Gagal di kirim, silahakan coba lagi!,", 
                                                         type: "error"
                                                         });</script>';
+
 						}
 				}else{
 					echo '<script>sweetAlert({
@@ -94,7 +95,7 @@
 		}
 			?>
 	<div id="kiri">
-	<form class="cd-form floating-labels" method="POST" action="coba.php">
+	<form class="cd-form floating-labels" method="POST" action="">
 		<fieldset>
 			<br></br>
 			<h2>Ticketing</h2>
@@ -110,7 +111,7 @@
 			
 			<div class="icon">
 				<label class="cd-label" for="pc_no">NIM</label>
-				<input class="company" type="text" name="pc_no" id="pc_no" autocomplete="off" required="required">
+				<input class="company" type="text" name="nim" id="nim" autocomplete="off" required="required">
 		    </div> 
 
 		    <div class="icon">
@@ -120,7 +121,7 @@
             
 			
             <div class="icon">
-		    	<label class="cd-label" for="nama">Email</label>
+		    	<label class="cd-label" for="email">Email</label>
 				<input class="email" type="email" name="email" id="email" autocomplete="off" required="email">
 		    </div> 
 
@@ -152,7 +153,6 @@
 			</div>
             
            	<div>
-            <a href="datatiket.php">Data Ticket</a>
 		      	<input type="submit" onclick="notifikasi()" name="input" id="input" value="Send Message">
 		    </div>
 			
@@ -163,11 +163,11 @@
 	</div>
 	
 	<div id="kanan">
-	<form class="cd-form floating-label" method="POST" action="index.php">
+	<form class="searching-form" action="<?=base_url();?>index.php/home/search" method="POST" >
 		<fieldset>
 		<div class="icon">
 				<label class="cd-label" for="id_ticket">Search Ticket</label>
-				<input class="search" type="text" name="id_ticket" id="id_ticket" autocomplete="off" required="required">
+				<input class="search" type="text" name="id_tiket" id="id_tiket" autocomplete="off" required="required">
 				
 				<div>
 				<input type="submit" onclick="notifikasi()" name="input" id="input" value="Search Ticket">
