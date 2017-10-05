@@ -58,6 +58,14 @@ if ($q) {
 	
 }
 	}
+	public function index1(){
+		$this->load->view('admin/index.php');
+	}
+	public function tiket(){
+		$this->load->model('model');
+		$data['isi'] = $this->model->getdata();
+		$this->load->view('admin/tiket.php',$data);
+	}
 	
 }
 ?>

@@ -46,5 +46,19 @@ class model extends CI_Model {
 		$getlisttiketclose=$this->db->select("*")->from("tiket")->where("status='close'")->limit("7")->get()->row_array();
 		return $getlisttiketclose;
 	}
+	public function getdatatable(){
+		$sql = "SELECT id_tiket, tanggal, pc_no, nama, email, departemen, problem, status FROM tiket;";
+		$hasil = $this->db->query($sql);
+		return $hasil->result();
+	}
+	public function getdata(){
+		$ambil = $this->db->get('tiket');
+		if($ambil->num_rows() > 0){
+			foreach($ambil->result() as $baris){
+			$hasil[] = $baris;
+			}
+		return $hasil;
+		}
+	}
 }
 ?>
