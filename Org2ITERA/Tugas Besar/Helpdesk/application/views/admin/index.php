@@ -55,8 +55,7 @@
                                         
                                     </div>
                                 </div>
-                            </div>
-                                         
+                            </div>	
                         </div>
                     </div>
                    
@@ -82,7 +81,7 @@
                                     <li class="collection-item">
                                         <div class="row">
                                             <div class="col s9">
-                                                <p class="collections-title"><?php echo $no; ?>. <?php echo $data['nama']; ?> | <?php echo $data['departemen']; ?></p>
+                                                <p class="collections-title"><?php echo $no; ?>. <?php echo $data['nama']; ?> | <?php echo $data['prodi']; ?></p>
                                                 <p class="collections-content">Problem : <?php echo $data['problem']; ?></p>
                                             </div>
                                             <div class="col s3">

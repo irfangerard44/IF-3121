@@ -20,7 +20,7 @@ class login extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('login.php');
+		$this->load->view('login');
 	}
 	public function proclogin(){
 		$username = $_POST['username'];
@@ -66,6 +66,6 @@ if ($q) {
 		$data['isi'] = $this->model->getdata();
 		$this->load->view('admin/tiket.php',$data);
 	}
-	
+
 }
 ?>

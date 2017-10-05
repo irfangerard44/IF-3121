@@ -33,11 +33,11 @@
                         <tr>
 	  
                         <th>id tiket</th>
-	                    <th>Tanggal</th>
-                        <th>PC No</th>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>Podi</th>
+	                    <th>nim</th>
+                        <th>nama</th>
+                        <th>email</th>
+                        <th>tanggal</th>
+                        <th>prodi</th>
                         <th>Problem</th>
 						<th>penanganan</th>
                         <th>Status</th>
@@ -53,11 +53,11 @@
 						?>
 						<tr>
 						<td><?php echo $baris->id_tiket; ?></td>
-						<td><?php echo $baris->tanggal; ?></td>
-						<td><?php echo $baris->pc_no; ?></td>
+						<td><?php echo $baris->nim; ?></td>
 						<td><?php echo $baris->nama; ?></td>
 						<td><?php echo $baris->email; ?></td>
-						<td><?php echo $baris->prodi</td>
+						<td><?php echo $baris->tanggal; ?></td>
+						<td><?php echo $baris->prodi ?></td>
 						<td><?php echo $baris->problem; ?></td>
 						<td><?php echo $baris->penanganan; ?></td>
 						<td><?php echo $baris->status; ?></td>

@@ -3,7 +3,7 @@
                     
 					<li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
-							<li class="bold"><a href="index.php" class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
+							<li class="bold"><a href="<?=base_url();?>index.php/login/index1" class="collapsible-header waves-effect waves-cyan"><i class="mdi-action-dashboard"></i> Dashboard</a>
 							</li>
 							</ul>
                     </li>   
@@ -14,23 +14,12 @@
                         ?>
                     <li class="no-padding">
                         <ul class="collapsible collapsible-accordion">
-                            <li class="bold"><a href="index.php" class="collapsible-header waves-effect waves-cyan"><i class="mdi-communication-email"></i> Tiket <span class="new badge"><?php echo $total2; ?></span></a>
+                            <li class="bold"><a href="<?=base_url();?>index.php/login/tiket" class="collapsible-header waves-effect waves-cyan"><i class="mdi-communication-email"></i> Tiket <span class="new badge"><?php echo $total2; ?></span></a>
                                 
                             </li>
                         </ul>
                     </li>   
-                    <li class="no-padding">
-                        <ul class="collapsible collapsible-accordion">
-                            <li class="bold"><a class="collapsible-header waves-effect waves-cyan"><i class="mdi-social-person"></i> Admin </a>
-                                <div class="collapsible-body">
-                                    <ul>
-                                        <li><a href="admin.php">Data Admin</a>
-                                        </li>                                        
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>   
+                    <
                 </ul>
-                <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a>
+                
             </aside>
